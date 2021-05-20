@@ -75,3 +75,32 @@ header li{
 #vedio_container div.row{
     height: 140px;
 }
+
+form input.input-bar{
+    margin: 0 auto;
+    margin-bottom: 7px;
+    position: relative;
+    display: block;
+    width: 70%;
+    background: #fff;
+    border-radius: 31px;
+    font-family: 'OPEN SANS';
+    font-weight: 600;
+    font-size: 18px;
+    color: #8f8fa1;
+    line-height: 2.2;
+}
+form textarea.input-bar{
+    margin: 0 auto;
+    margin-top: 40px;
+    position: relative;
+    display: block;
+    width: 70%;
+    background: #fff;
+    border-radius: 10px;
+    font-family: 'OPEN SANS';
+    font-weight: 600;
+    font-size: 18px;
+    color: #8f8fa1;
+    line-height: 1.2;
+}

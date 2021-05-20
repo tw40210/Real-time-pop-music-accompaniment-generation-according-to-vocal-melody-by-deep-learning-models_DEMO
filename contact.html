@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <title>Paper Output Demo </title>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="#">
+                        <img src="pictures/Pngtree_elements.png">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="http://ai.cs.nthu.edu.tw/" target="_blank">實驗室網站</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">聯絡我們</a>
+                        </li>
+                    </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section id="intro">
+            <div class="jumbotron">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>Real-time pop music accompaniment generation according to vocal melody by deep learning models</h1>
+                            <p class="lead">基於人聲旋律的流行音樂即時伴奏生成系統</p>
+                            <a class="btn" href="#">Paper</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+        
+        <section id="second">
+            <div class="container" style="margin-bottom: 100;">
+                <div class="row">
+                <div class="col-md-8 offset-md-2 text-center">
+                    <h2>聯絡資訊</h2>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img id="mypic" src="pictures/69874555_p0_master1200.jpg">
+                        <h2 style="font-size: 20; font-weight: 600;">林子軒<br>(Lin Tzu Hsuan)</h2>
+                    </div>
+                    <div class="col-md-8 text-left align-self-center ">
+                        <h3 style="font-size: 15; margin-bottom: 30; font-weight: 600;">E-mail: s107065525@m107.nthu.edu.tw</h3>
+                    </div>
+
+                </div>
+
+            </div>
+            <form   enctype="text/plain" accept-charset="utf-8">
+                <!-- 寄件者姓名    -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2 text-center">
+                            <input class="input-bar" id="nameText" type="text" name="Name"  value size="60" placeholder="  姓名(name)" required>  <!-- required 必填欄位 ，placeholder 預設內容--> 
+                 
+                            <!-- 寄件者email -->
+                            <input class="input-bar" id="emailText" type="email" name="Email"  value size="60" placeholder="  Email" required>
+                            
+                            <!-- 寄件者電話 -->
+                            <input class="input-bar" id="telText"type="tel" name="Phone"  value size="60" aria-invalid="false" placeholder="  電話(phone)" required>
+                            
+                            <!-- 郵件主旨 -->
+                            <input class="input-bar" id="subText" type="text" name="Subject"  value size="60" aria-invalid="false" placeholder="  主旨(subject)" required>
+                                    
+                            <!-- 郵件內容 -->
+                            <textarea class="input-bar" id="bodyText" name="your-message" cols="40" rows="10"  aria-required="true" aria-invalid="false" placeholder="  你的訊息(Your Message)" required></textarea>
+                            
+                            <!-- 傳送按鈕 -->
+                            <div>
+                                <input class="btn" type="button" value="送出訊息" onclick="submitHandler();" 
+                                style="    
+                                font-family: 'OPEN SANS';
+                                font-weight: 600;
+                                font-size: 18px;
+                                margin-top: 40;">
+                                <a id="mailTo" ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+             </form>
+
+
+        </section>
+
+    
+        <script src="script.js"></script>
+    </body>
+
+</html>
